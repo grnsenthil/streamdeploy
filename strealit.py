@@ -38,7 +38,7 @@ input = {
 }
 
 
-model = joblib.load('model_pipeline_train_test')
+model = joblib.load('model_pipeline_train_test.pkl')
 
 if st.button('Predict'):
     X_inputs = pd.DataFrame(input,index=[0])
@@ -47,3 +47,6 @@ if st.button('Predict'):
     st.write(prediction)
 
     # Post this we have to run the windows cmd prompt "streamlit run D:\DS\DataScience_Working\Deploy\Steamlit\strealit.py"
+    # once ran the above command it iwll open webUI to predict the promotion
+    # Then create the repo in github and upload the files of streamlit.py, train file, pickle file, requirements.txt
+    # https://streamlit.io/#install goto this URL and login with mail id
